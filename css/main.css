@@ -1,0 +1,35 @@
+body {
+    background-color: lightsalmon;
+}
+
+.add-todo-container {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.papa {
+    background-color: purple;
+    padding: 20px;
+}
+
+.child {
+    background-color: yellow;
+}
+
+.filter-container {
+    background-color: tomato;
+    padding: 10px;
+}
+
+.todo-stats-container {
+    background-color: lightpink;
+    padding: 5px;
+}
+
+.filter-container{
+    
+}

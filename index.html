@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <h1>MVC</h1>
+    <h2>Model - View - Controller</h2>
+
+    <section class="filter-container">
+        <h3>Filter Todos</h3>
+        
+        <select onchange="onSort(this.value)">
+            <option>created</option>
+            <option>text</option>
+            <option>importance</option>
+        </select>
+
+        <select onchange="onFilterChanged(this.value)">
+            <option>All</option>
+            <option>Done</option>
+            <option>Active</option>
+        </select>        
+    </section>
+
+    <ul class="todo-list"></ul>
+
+    <section class="todo-stats-container">
+        <h3>
+            Total todos:
+            <span class="todo-count"></span>
+            Active:
+            <span class="active-count"></span>
+        </h3>
+    </section>
+
+    <section class="add-todo-container">
+        <h3>Add Todo</h3>
+        <input type="text" placeholder="What needs to be done?" />
+        <select class="importance">
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select>
+        <button class="btn-add" onclick="onAddTodo()">Add</button>
+    </section>
+
+
+
+    <div hidden class="papa" onclick="alert('papa')">
+        PAPA
+        <div class="child" onclick="alert('child');event.stopPropagation();">
+            CHILD
+        </div>
+        PAPA
+    </div>
+
+
+    <!-- <script src="js/demo-addEventListener.js"></script> -->
+    <script src="js/storage-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+
+</html>
